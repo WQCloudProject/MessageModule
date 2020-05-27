@@ -1,0 +1,14 @@
+use_frameworks!
+
+source 'https://github.com/WQCloudProject/CloudSpecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'MessageModule_Example' do
+  pod 'MessageModule', :path => '../'
+
+  target 'MessageModule_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,23 @@
+PODS:
+  - MessageModule (0.1.6):
+    - SnapKit
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - MessageModule (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SnapKit
+
+EXTERNAL SOURCES:
+  MessageModule:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MessageModule: bb59f0eb683455a07b597e10ab75ea365a19d034
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 867ceedfb9e4c20667ffe5d572e8db54e137221e
+
+COCOAPODS: 1.9.1

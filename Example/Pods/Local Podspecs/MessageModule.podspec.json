@@ -1,0 +1,29 @@
+{
+  "name": "MessageModule",
+  "version": "0.1.6",
+  "summary": "A short description of MessageModule.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/WQCloudProject/MessageModule.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "WQDev": "weiqiang2265@163.com"
+  },
+  "source": {
+    "git": "https://github.com/WQCloudProject/MessageModule.git",
+    "tag": "0.1.6"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "swift_versions": "5.0",
+  "source_files": "MessageModule/Classes/**/*",
+  "dependencies": {
+    "SnapKit": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}

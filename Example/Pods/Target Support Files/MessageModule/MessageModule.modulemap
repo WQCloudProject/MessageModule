@@ -1,0 +1,6 @@
+framework module MessageModule {
+  umbrella header "MessageModule-umbrella.h"
+
+  export *
+  module * { export * }
+}
