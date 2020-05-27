@@ -8,19 +8,25 @@
 import UIKit
 
 open class MessageViewController: UIViewController {
-
+    
+    public var userId: String!
     public var dataArray: [String]!
     open override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "消息"
         self.view.backgroundColor = .white
         
-        dataArray = ["消息1","消息2"]
+        
+        guard let arr = NSArray(contentsOfFile:NSHomeDirectory() + "/Documents/" + userId + ".plist") as? [String] else {
+            self.setNoDataUI()
+            return
+        }
+        dataArray = arr
         setUpUI()
         // Do any additional setup after loading the view.
     }
     
-
+    
     func setUpUI() {
         view.addSubview(tableView)
         tableView.snp.makeConstraints { make in
@@ -28,7 +34,9 @@ open class MessageViewController: UIViewController {
             make.bottom.equalTo(view).offset(-7)
         }
     }
-    
+    func setNoDataUI() {
+        
+    }
     private lazy var tableView: UITableView = {
         
         let table = UITableView()
@@ -44,18 +52,18 @@ open class MessageViewController: UIViewController {
         return table
     }()
     
-
+    
 }
 extension MessageViewController: UITableViewDelegate, UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataArray.count
     }
-
+    
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.cell(ofType: MessageCell.self)
         cell.nameLabel.text = dataArray[indexPath.row]
-//        cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: SCREEN_WIDTH)
+        //        cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: SCREEN_WIDTH)
         
         return cell
     }

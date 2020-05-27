@@ -1,7 +1,7 @@
 {
   "name": "MessageModule",
-  "version": "0.1.6",
-  "summary": "A short description of MessageModule.",
+  "version": "0.1.8",
+  "summary": "MessageModule.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/WQCloudProject/MessageModule.git",
   "license": {
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/WQCloudProject/MessageModule.git",
-    "tag": "0.1.6"
+    "tag": "0.1.8"
   },
   "platforms": {
     "ios": "10.0"
